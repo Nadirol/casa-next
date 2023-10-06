@@ -1,78 +1,39 @@
 import { TFunction, i18n } from "next-i18next"
-import Image from "next/image";
-import { useRouter } from "next/router";
-import { useEffect, useRef, useState } from "react";
 import SearchBar from "./SearchBar";
-import DarkFilter from "./DarkFilter";
-import NavLinks from "./NavLinks";
+import { SetStateAction } from "react";
+import { useRouter } from "next/router";
 
-const useClickDetector = (ref: React.MutableRefObject<HTMLDivElement | null>, func: () => void, secondRef: React.MutableRefObject<HTMLDivElement | null>) => {
-    useEffect(() => {
-        const handleClickOutside = (event: any) => {
-            if (ref.current && !ref.current.contains(event.target) && !secondRef.current?.contains(event.target)) {
-                func()
-            }
-        }
-  
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => {
-          document.removeEventListener("mousedown", handleClickOutside);
-        };
-    },[ref])    
-};
-  
-const lngs = new Map([
-['en', { nativeLanguage: 'English' }],
-['vi', { nativeLanguage: 'Tiếng Việt' }],
-]);
-
-const NavButtons = ({ t }: { t: TFunction}) => {
-    const [lngDropdownOpened, setLngDropdownOpened] = useState(false);
-    const dropdownRef = useRef(null);
-    const languageButtonRef = useRef(null);
-    const hideDropdown = () => {
-      setLngDropdownOpened(false)
-    }
-
-    useClickDetector(languageButtonRef, hideDropdown, dropdownRef);
-
-    const [sidenavOpened, setSidenavOpened] = useState(false);
-
+const NavButtons = ({ t, setSidenavOpened }: { t: TFunction, setSidenavOpened: (value: SetStateAction<boolean>) => void}) => {
     const router = useRouter();
-    
+
     const changeLanguage = (lng: string) => {
-      i18n?.changeLanguage(lng); 
-      setLngDropdownOpened(false);
-      router.replace(`${router.pathname === '/' ? `/${lng}` : `/${lng}${router.asPath}`}`,undefined, { locale: lng })
+        i18n?.changeLanguage(lng); 
+        router.replace(`${router.pathname === '/' ? `/${lng}` : `/${lng}${router.asPath}`}`,undefined, { locale: lng })
     }
-
-    const [searchBarVisible, setSearchBarVisible] = useState(false);
-
-    const showSearchBar = () => {
-        setSearchBarVisible(true);
-    };
 
     return (
-        <div className="flex gap-4 items-end flex-col -xl:ml-auto">
-            <div className="flex gap-8 items-center">
-                <button>
-                    {t('callNow')} 0987 654 321
-                </button>
+        <div className="flex gap-6 items-center w-full relative z-10">
+            <SearchBar t={t}/>
 
-                <div className="flex">
-                    <button onClick={() => changeLanguage('vi')} disabled={i18n?.resolvedLanguage === 'vi'}
-                        className={`w-[8rem] font-medium ${i18n?.language === 'vi' ? 'text-neutral-700' : 'text-neutral-600'} hover:text-neutral-700`}>
-                        VI
-                    </button>
-                    <span className="pointer-events-none">/</span>
-                    <button onClick={() => changeLanguage('en')} disabled={i18n?.resolvedLanguage === 'en'}
-                        className={`w-[8rem] font-medium ${i18n?.language === 'en' ? 'text-neutral-700' : 'text-neutral-600'} hover:text-neutral-700`}>
-                        EN
-                    </button>
-                </div>
+            <div className="flex gap-1 font-bold">
+                <button onClick={() => changeLanguage('vi')} disabled={i18n?.resolvedLanguage === 'vi'}
+                    className={`font-bold ${i18n?.language === 'vi' ? 'text-white' : 'text-neutral-400'} 
+                    hover:text-white`}>
+                    VI
+                </button>
+                <span className="pointer-events-none text-neutral-500">/</span>
+                <button onClick={() => changeLanguage('en')} disabled={i18n?.resolvedLanguage === 'en'}
+                    className={`font-bold ${i18n?.language === 'en' ? 'text-white' : 'text-neutral-400'} 
+                    hover:text-white`}>
+                    EN
+                </button>
             </div>
 
-            <SearchBar t={t}/>
+            <button className="xl:hidden" onClick={() => setSidenavOpened(true)}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 18C20.2549 18.0003 20.5 18.0979 20.6854 18.2728C20.8707 18.4478 20.9822 18.687 20.9972 18.9414C21.0121 19.1958 20.9293 19.4464 20.7657 19.6418C20.6021 19.8373 20.3701 19.9629 20.117 19.993L20 20H4C3.74512 19.9997 3.49997 19.9021 3.31463 19.7272C3.1293 19.5522 3.01777 19.313 3.00283 19.0586C2.98789 18.8042 3.07067 18.5536 3.23426 18.3582C3.39786 18.1627 3.6299 18.0371 3.883 18.007L4 18H20ZM20 11C20.2652 11 20.5196 11.1054 20.7071 11.2929C20.8946 11.4804 21 11.7348 21 12C21 12.2652 20.8946 12.5196 20.7071 12.7071C20.5196 12.8946 20.2652 13 20 13H4C3.73478 13 3.48043 12.8946 3.29289 12.7071C3.10536 12.5196 3 12.2652 3 12C3 11.7348 3.10536 11.4804 3.29289 11.2929C3.48043 11.1054 3.73478 11 4 11H20ZM20 4C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5C21 5.26522 20.8946 5.51957 20.7071 5.70711C20.5196 5.89464 20.2652 6 20 6H4C3.73478 6 3.48043 5.89464 3.29289 5.70711C3.10536 5.51957 3 5.26522 3 5C3 4.73478 3.10536 4.48043 3.29289 4.29289C3.48043 4.10536 3.73478 4 4 4H20Z" fill="white"/>
+                </svg>
+            </button>
         </div>
     )
 };

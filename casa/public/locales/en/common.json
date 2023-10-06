@@ -1,0 +1,85 @@
+{
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact",
+    "contactUs": "Contact Us",
+    "collection": "Collection",
+    "news": "News",
+    
+    "sendAMessage": "SEND A MESSAGE",
+    "firstName": "First Name",
+    "firstNamePlaceholder": "Enter your first name",
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Enter your last name",
+    "phoneNumber": "Phone Number",
+    "phoneNumberPlaceholder": "Enter your phone number",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "message": "Message",
+    "messagePlaceholder": "Type your message here",
+    "send": "Send",
+
+    "addressDetails": "Nguyet Que 25-05 Vinhomes The Harmony, Hanoi, Vietnam",
+    "address": "Address",
+
+    "links": "Links",
+
+    "welcomeTo": "WELCOME TO",
+    "headerSlogan": "Crafting Timeless Elegance in Vietnamese Furniture",
+    "headerParagraph1": "At CASA, we take pride in transforming living spaces into works of art with our exquisite, stylish furniture. Rooted in the heart of Vietnam, we have spent years perfecting the art of crafting timeless pieces that blend functionality and beauty seamlessly.",
+    "headerParagraph2": "Our passion for design, quality, and sustainability drives us to create furniture that enhances the aesthetics of your living spaces while ensuring comfort and longevity.",
+
+    "productsHeading": "Products",
+
+    "ourStory": "Our Story",
+    "ourStoryParagraph": "CASA emerged from a dream to redefine the furniture industry. Our journey began with a commitment to showcase the exceptional craftsmanship Vietnam has to offer. Over the years, we have nurtured local talents, fostered a culture of innovation, and embraced eco-conscious practices to deliver furniture that transcends trends and withstands the test of time.",
+    "ourCraftmanship": "Our Craftsmanship",
+    "ourCraftmanshipParagraph": "At CASA, every piece of furniture is a labor of love. Our skilled artisans combine traditional woodworking techniques with modern design sensibilities to produce pieces that resonate with both classic elegance and contemporary aesthetics. We source the finest materials, from sustainably harvested wood to eco-friendly finishes, ensuring that our furniture is as kind to the environment as it is to your home.",
+    "ourCollections": "Our Collections",
+    "ourCollectionsParagraph": "Our diverse range of furniture collections reflects our dedication to versatility and individuality. Whether you seek the warmth of rustic charm, the clean lines of modern minimalism, or the grandeur of timeless classics, CASA has a collection for you. Each piece is thoughtfully designed to elevate your living spaces, offering comfort and style that will be cherished for generations.",
+
+    "whyChooseCasa": "Why Choose CASA?",
+
+    "valuesTitle1": "Unparalleled Quality",
+    "valuesParagraph1": "We take no shortcuts in creating furniture that stands the test of time, promising enduring quality and comfort.",
+    "valuesTitle2": "Sustainability",
+    "valuesParagraph2": "We are committed to sustainable practices, using responsibly sourced materials and eco-friendly finishes to minimize our ecological footprint.",
+    "valuesTitle3": "Artisanal Craftsmanship",
+    "valuesParagraph3": "Our furniture is handcrafted by skilled artisans who infuse their passion and expertise into every piece.",
+    "valuesTitle4": "Customization",
+    "valuesParagraph4": "We understand that your space is unique. That's why we offer customization options to help you create the perfect furniture piece for your home.",
+    "valuesTitle5": "Affordability",
+    "valuesParagraph5": "CASA believes that luxury should be accessible to everyone. We offer competitive pricing without compromising on quality.",
+    "valuesTitle6": "Customer Satisfaction",
+    "valuesParagraph6": "Our dedicated customer service team is here to assist you at every step of your journey, from selection to delivery and beyond.",
+
+    "footerSlogan": "Where your home becomes a masterpiece.",
+    "customerSupport": "Customer Support",
+    "storesAndOpeningHours": "Stores and opening hours",
+    "termsAndPolicy": "Terms and policy",
+    "FAQs": "FAQs",
+    "followUs": "Follow Us",
+
+    "callNow": "Call now",
+
+    "viewAllProducts": "View All Products",
+
+    "tarno": "Tarno Table and Chair",
+    "tarnoCategory": "Table, Wooden",
+    "tarnoDescription": "CASA's Tarno table and chair set is suitable for all spaces inside and outside your home. Especially popular in chill, deep spaces such as cafes, balconies, hallways, and gardens",
+
+    "woodenBlister": "12-slat Wooden Floorboard",
+    "woodenBlisterCategory": "Wooden, Blister",
+    "woodenBlisterDescription": "12-slat wooden floorboards decorate super beautiful homes, balconies, terraces, gardens, etc., easy to install on all surfaces such as concrete, grass, sand and gravel, suitable for all spaces and areas.",
+
+    "tab": "Smart Bedside Table",
+    "tabCategory": "Bedroom, Smart",
+    "tabDescription": "Classic and modern combination, compact and versatile: bedside cabinet, living room decoration, sofa side table, file storage cabinet... suitable for any space.",
+
+    "readMore": "Read more",
+    "search": "Search",
+
+    "contactParagraph": "Feel free to contact us with a project proposal, quote or estimation, or simply to say hello. Here’s our contact info.",
+    "companyTitle": "XUAN HOA HOME JOINT STOCK COMPANY"
+}

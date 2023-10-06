@@ -3,30 +3,23 @@ import Link from "next/link"
 
 const NavLinks = ({ t }: { t: TFunction}) => {
     return (
-        <ul className="hidden xl:flex gap-[4rem] text-neutral-900 text-base tracking-[0.05rem]">
+        <ul className="hidden xl:flex gap-6 text-white text-base tracking-[0.1rem]">
             <li className="navlink-underline inline-block relative">
-                <Link href={`/${i18n?.language}`} 
-                className=" [&:last-child]:mr-0">
+                <Link href={`/${i18n?.language}/products`} 
+                className="">
                     {t('products').toUpperCase()}
                 </Link>
             </li>
 
             <li className="navlink-underline inline-block relative">
-                <Link href={`/${i18n?.language}/tours`} 
-                className="">
-                    {t('collection').toUpperCase()}
-                </Link>
-            </li>
-
-            <li className="navlink-underline inline-block relative">
-                <Link href={`/${i18n?.language}/tours`} 
+                <Link href={`/${i18n?.language}/about`} 
                 className="">
                     {t('aboutUs').toUpperCase()}
                 </Link>
             </li>
 
             <li className="navlink-underline inline-block relative">
-                <Link href={`/${i18n?.language}/about`} 
+                <Link href={`/${i18n?.language}`} 
                 className="">
                     {t('news').toUpperCase()}
                 </Link>

@@ -1,12 +1,15 @@
 import { TFunction, i18n } from "next-i18next";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
 
 import Link from "next/link";
-import { useRouter } from "next/router";
 import NavLinks from "./Header/NavLinks";
 import NavButtons from "./Header/NavButtons";
-import { logoLight } from "../public/assets";
+import { headerBackground, logoDark, mobileHeaderBackground } from "../public/assets";
+import HeaderContent from "./Header/Content";
+import StickyHeader from "./Header/StickyHeader";
+import SideNav from "./Header/SideNav";
+import { useEffect, useRef, useState } from "react";
+import FadeInOnScroll from "./animated/FadeInOnScroll";
 
 const useClickDetector = (refs: React.MutableRefObject<HTMLDivElement | null>[], func: () => void) => {
     useEffect(() => {
@@ -21,26 +24,58 @@ const useClickDetector = (refs: React.MutableRefObject<HTMLDivElement | null>[],
           document.removeEventListener("mousedown", handleClickOutside);
         };
     },[refs[0]])
-  };
-
-const lngs = new Map([
-    ['en', { nativeLanguage: 'English' }],
-    ['vi', { nativeLanguage: 'Tiếng Việt' }],
-]);
+};
 
 const Header = ({ t }: { t: TFunction }) => {
+
+    const [sidenavOpened, setSidenavOpened] = useState(false);
+    const sideNavRef = useRef(null);
+
+    const hideSideNav = () => {
+        setSidenavOpened(false)
+    };
+
+    useClickDetector([sideNavRef], hideSideNav);
+
     return (
-    <nav className="sticky z-20 bg-white top-0 w-full">
-        <div className="w-container flex justify-between items-end mx-auto py-2 xl:py-4 -xl:px-4">
-            <Link href={`/${i18n?.language}`}>
-                <Image src={logoLight} alt="" className="w-12 md:w-16"/>
-            </Link>
+        <header className="relative z-20 w-full py-[60px] h-screen overflow-hidden flex gap-12 flex-col border-b border-neutral-500 bg-neutral-900">
+            <Image src={headerBackground} alt="background image" 
+            className="absolute z-0 inset-0 w-full h-full object-cover pointer-events-none -md:hidden"/>
+            <Image src={mobileHeaderBackground} alt="background image" 
+            className="absolute z-0 inset-0 w-full h-full object-cover pointer-events-none md:hidden"/>
 
-            <NavLinks t={t}/>
+            <div className="bg-gradient-to-b from-black md:via-transparent to-filter-dark md:to-transparent absolute z-0 inset-0 w-full h-full"></div>
 
-            <NavButtons t={t}/>
-        </div>
-    </nav>
+            <div className="w-container flex justify-between items-center mx-auto py-2 xl:py-4 relative z-10">
+                <Link href={`/${i18n?.language}`}>
+                    <Image src={logoDark} alt="" className="w-[8rem] xl:w-[11rem]"/>
+                </Link>
+
+                <div className="flex gap-6 items-end flex-col">
+                    <NavLinks t={t}/>
+
+                    <NavButtons 
+                        t={t}
+                        setSidenavOpened={setSidenavOpened}
+                    />
+                </div>
+            </div>
+
+            <StickyHeader t={t} setSidenavOpened={setSidenavOpened}/>
+
+            <SideNav
+                t={t}
+                sidenavOpened={sidenavOpened}
+                setSidenavOpened={setSidenavOpened}
+                sideNavRef={sideNavRef}
+            />
+
+            <div className="flex gap-10 w-container mx-auto justify-between relative min-h-[80%] pb-10">
+                <FadeInOnScroll>
+                    <HeaderContent t={t}/>
+                </FadeInOnScroll>
+            </div>
+        </header>
     )
 };
 

@@ -1,0 +1,84 @@
+{
+    "home": "Trang Chủ",
+    "about": "Giới Thiệu",
+    "products": "Sản Phẩm",
+    "contact": "Liên Hệ",
+    "contactUs": "Liên Hệ Ngay",
+    "collection": "Bộ Sưu Tập",
+    "news": "Tin Tức",
+    
+    "aboutUs": "Về Chúng Tôi",
+    
+    "sendAMessage": "Gửi Tin Nhắn",
+    "firstName": "Họ",
+    "firstNamePlaceholder": "Nhập họ của bạn",
+    "lastName": "Tên",
+    "lastNamePlaceholder": "Nhập tên của bạn",
+    "phoneNumber": "Số Điện Thoại",
+    "phoneNumberPlaceholder": "Nhập số điện thoại của bạn",
+    "email": "Email",
+    "emailPlaceholder": "Nhập email của bạn",
+    "message": "Tin nhắn",
+    "messagePlaceholder": "Nhập tin nhắn ở đây",
+    "send": "Gửi",
+    "addressDetails": "Nguyệt Quế 25-05 Vinhomes The Harmony, Hà Nội, Việt Nam",
+    "address": "Địa Chỉ",
+
+    "welcomeTo": "CHÀO MỪNG ĐẾN VỚI",
+    "headerSlogan": "Tạo Ra Sự Thanh Lịch Đẹp Mắt trong Nội Thất Việt Nam",
+    "headerParagraph1": "Tại CASA, chúng tôi tự hào về việc biến không gian sống thành các tác phẩm nghệ thuật với các sản phẩm nội thất tinh xảo và thời thượng của chúng tôi. Nằm chặt trong trái tim của Việt Nam, chúng tôi đã dành nhiều năm để hoàn thiện nghệ thuật chế tác các tác phẩm vượt thời gian kết hợp hoàn hảo giữa tính thực dụng và vẻ đẹp.",
+    "headerParagraph2": "Niềm đam mê của chúng tôi với thiết kế, chất lượng và bền vững thúc đẩy chúng tôi tạo ra các sản phẩm nội thất nâng cao thẩm mỹ của không gian sống của bạn trong khi đảm bảo sự thoải mái và sự bền bỉ.",
+
+    "productsHeading": "Sản Phẩm",
+
+    "ourStory": "Câu Chuyện Của Chúng Tôi",
+    "ourStoryParagraph": "CASA nảy mầm từ một giấc mơ để định nghĩa lại ngành công nghiệp nội thất. Hành trình của chúng tôi bắt đầu với cam kết trình diễn những tài năng xuất sắc mà Việt Nam có thể cung cấp. Suốt những năm qua, chúng tôi đã nuôi dưỡng các tài năng địa phương, tạo ra văn hóa sáng tạo và tiếp tục áp dụng các thực hành bảo vệ môi trường để cung cấp sản phẩm nội thất vượt qua các xu hướng và thể hiện được độ bền theo thời gian.",
+    "ourCraftmanship": "Nghệ Thuật Chế Tác Của Chúng Tôi",
+    "ourCraftmanshipParagraph": "Tại CASA, từng sản phẩm nội thất là một tình yêu lao động. Các nghệ nhân tài năng của chúng tôi kết hợp các kỹ thuật chế tác gỗ truyền thống với nhận thức thiết kế hiện đại để tạo ra các tác phẩm thể hiện sự kết hợp hoàn hảo giữa sự thanh lịch cổ điển và thẩm mỹ đương đại. Chúng tôi tìm kiếm các vật liệu tốt nhất, từ gỗ được khai thác có trách nhiệm đến các lớp hoàn thiện thân thiện với môi trường, đảm bảo rằng sản phẩm nội thất của chúng tôi không chỉ mang lại sự ấm áp cho môi trường mà còn cho ngôi nhà của bạn.",
+    "ourCollections": "Các Bộ Sưu Tập Của Chúng Tôi",
+    "ourCollectionsParagraph": "Các bộ sưu tập đa dạng của chúng tôi phản ánh cam kết đa dạng và cá nhân hóa của chúng tôi. Cho dù bạn tìm kiếm sự ấm áp của vẻ đẹp cổ điển, đường nét sạch sẽ của phong cách hiện đại hoặc vẻ lộng lẫy của những tác phẩm cổ điển vượt thời gian, CASA có bộ sưu tập dành cho bạn. Mỗi sản phẩm được thiết kế một cách tỉ mỉ để nâng cao không gian sống của bạn, mang lại sự thoải mái và thời trang mà sẽ được trân trọng qua nhiều thế hệ.",
+
+    "whyChooseCasa": "CASA Là Lựa Chọn Hoàn Hảo",
+
+    "valuesTitle1": "Chất Lượng",
+    "valuesParagraph1": "Chúng tôi không bỏ qua công đoạn kĩ thuật khi sản xuất sản phẩm nội thất, đồng thời cam kết chất lượng như mong đợi.",
+    "valuesTitle2": "Bền Bỉ",
+    "valuesParagraph2": "Chúng tôi cam kết về độ bền bỉ, sử dụng các nguyên liệu có nguồn gốc và kĩ thuật thân thiện với môi trường để giảm thiểu dấu chân sinh thái.",
+    "valuesTitle3": "Nghệ Thuật Chế Tác Thủ Công",
+    "valuesParagraph3": "Sản phẩm nội thất của chúng tôi được chế tác bằng tay bởi các nghệ nhân tài năng, họ không ngừng truyền đạt đam mê và chuyên môn vào từng sản phẩm.",
+    "valuesTitle4": "Linh Hoạt",
+    "valuesParagraph4": "Không gian của bạn cần có gì đó độc nhất. Đó là lý do tại sao chúng tôi luôn thích ứng để giúp bạn tạo ra sản phẩm nội thất hoàn hảo cho ngôi nhà của bạn.",
+    "valuesTitle5": "Giá Cả Hợp Lý",
+    "valuesParagraph5": "CASA tin rằng sản phẩm sang trọng nên dễ tiếp cận cho mọi người. Chúng tôi cung cấp giá cả cạnh tranh mà không làm ảnh hưởng đến chất lượng.",
+    "valuesTitle6": "Tận Lòng Phục Vụ",
+    "valuesParagraph6": "Đội ngũ dịch vụ khách hàng của chúng tôi sẽ ở đây để hỗ trợ bạn tại mọi bước trong hành trình của bạn, từ việc lựa chọn đến giao hàng và xa hơn nữa.",
+
+    "footerSlogan": "Nơi ngôi nhà của bạn trở thành một tác phẩm nghệ thuật.",
+    "customerSupport": "Phục Vụ Khách Hàng",
+    "storesAndOpeningHours": "Cửa hàng và giờ mở cửa",
+    "termsAndPolicy": "Điều khoản và chính sách",
+    "FAQs": "Câu hỏi thường gặp",
+    "followUs": "Theo dõi chúng tôi",
+
+    "callNow": "Gọi ngay",
+
+    "viewAllProducts": "Xem tất cả",
+
+    "tarno": "Bàn Ghế Tarno",
+    "tarnoCategory": "Bàn, Gỗ",
+    "tarnoDescription": "Bộ bàn ghế Tarno của CASA phù hợp cho mọi không gian bên trong và bên ngoài ngôi nhà của bạn. Đặc biệt phổ biến trong không gian thư giãn, sâu lắng như quán cà phê, ban công, hành lang và khu vườn.",
+
+    "woodenBlister": "Ván Vỉ Gỗ 12 Nan",
+    "woodenBlisterCategory": "Gỗ, Vỉ gỗ",
+    "woodenBlisterDescription": "Gỗ sàn 12 thanh trang trí cho ngôi nhà, ban công, sân thượng, khu vườn... cực kỳ đẹp, dễ dàng lắp đặt trên mọi bề mặt như bê tông, cỏ, cát và sỏi, phù hợp cho tất cả các không gian và khu vực.",
+
+    "tab": "Tủ Đầu Giường Thông Minh",
+    "tabCategory": "Phòng ngủ, Thông minh",
+    "tabDescription": "Phong cách cổ điển kết hợp hiện đại, nhỏ gọn, đa chức năng: tủ đầu giường, trang trí phòng khách, bàn cạnh sofa, tủ để tài liệu… phù hợp với mọi không gian",
+
+    "readMore": "Đọc thêm",
+    "search": "Tìm kiếm",
+
+    "contactParagraph": "Hãy tự do liên hệ với chúng tôi với đề xuất dự án, báo giá hoặc ước tính, hoặc chỉ đơn giản là để nói xin chào. Đây là thông tin liên hệ của chúng tôi.",
+    "companyTitle": "CÔNG TY CỔ PHẦN XUÂN HOÀ HOME"
+}
