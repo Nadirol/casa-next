@@ -5,7 +5,7 @@ const MessengerWidget = () => {
 
     return (
         <a target="_blank" href="http://m.me/XuanHoaHome" className="overflow-hidden relative z-10 shadow-bold">
-            <Image src={messengerLogo} alt="zalo logo" className="w-9 md:w-12"/>                
+            <Image src={messengerLogo} alt="messenger logo" className="w-9 md:w-12"/>                
         </a>
     )
 };

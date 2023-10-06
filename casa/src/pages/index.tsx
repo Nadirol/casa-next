@@ -9,6 +9,7 @@ import Footer from '../../components/Footer';
 import About from '../../components/Main/About';
 import Widgets from '../../components/Widgets';
 import Values from '../../components/Main/Values';
+import { NextSeo } from 'next-seo';
 
 const roboto = Roboto({ subsets: ['latin','vietnamese'], weight: ['300','400','500','700'] });
 
@@ -17,6 +18,10 @@ export default function Home() {
 
   return (
     <>
+      <NextSeo
+        title="CASA - Cuộc Sống Tiện Nghi"
+        canonical="casa-vietnam.vn/vi"
+      />
       <div className={`${roboto.className} flex flex-col overflow-hidden`}>
         <Header
           t={t}
