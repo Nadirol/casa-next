@@ -2,18 +2,16 @@ import { useTranslation } from "next-i18next"
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-import { Fira_Sans } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 
 import { NextSeo } from "next-seo";
-import AltHeader from "../../../components/AltHeader";
 import Footer from "../../../components/Footer";
-import { aboutBackground, productsBackground } from "../../../public/assets";
-import Image from "next/image";
+
 import ProductsHeader from "../../../components/Products/ProductsHeader";
 import Products from "../../../components/Main/Products";
 import Widgets from "../../../components/Widgets";
 
-const fira = Fira_Sans({ subsets: ['latin','vietnamese'], weight: ["300","400","500","600","700"] });
+const roboto = Roboto({ subsets: ['latin','vietnamese'], weight: ["300","400","500","700"] });
 
 export default function AboutPage() {
   const { t } = useTranslation('common');
@@ -25,7 +23,7 @@ export default function AboutPage() {
         canonical="casa-vietnam.vn/vi/products"
       />
       
-      <div className={`${fira.className} flex flex-col overflow-hidden`}>
+      <div className={`${roboto.className} flex flex-col overflow-hidden`}>
         <ProductsHeader
           t={t}
         />

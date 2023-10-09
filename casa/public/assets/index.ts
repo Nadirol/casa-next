@@ -34,8 +34,11 @@ import banner1 from "./5869029.png"
 import chairImage from "./z4754979139979_bffb0f3f234b8a49497c4ea430e0207f.jpg"
 import blisterImage from "./NPNA1161.jpg"
 import tabImage from "./NPNA0250.jpg"
+import tabImage2 from "./NPNA0227.jpg"
+import tabImage3 from "./NPNA0228.jpg"
+import tabImage4 from "./NPNA0259.jpg"
 
 export { logoLight, phoneIcon, magnifyingGlassIcon, bannerExample, productExample, arrowRightIcon, logoDark, headerBackground,
 couch1, couch2, couch3, banner2, footerBackground, facebookIcon, aboutBackground, couch4, valuesBackground, banner1, menuIcon,
 closeicon, mobileHeaderBackground, zaloLogo, messengerLogo, chairImage, blisterImage, planeIcon, tabImage, locationIcon,
-productsBackground }
+productsBackground, tabImage2, tabImage3, tabImage4 }

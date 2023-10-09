@@ -17,7 +17,7 @@ const ProductsSlide = ({ keyword, image, t, index, activeSlide }: Props) => {
         ${index === activeSlide ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}>
             <div className="flex-1 flex gap-8 md:gap-12 text-center items-center md:items-end flex-col md:text-end">
                 <div className="flex gap-2 flex-col items-end max-w-[80%] md:max-w-[75%]">
-                    <h1 className="text-2xl md:text-[3rem] md:leading-snug font-bold tracking-[0.01rem] ">
+                    <h1 className="text-2xl md:text-[3rem] md:leading-snug font-bold tracking-[0.05rem]">
                         {t(keyword).toUpperCase()}
                     </h1>
 

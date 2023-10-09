@@ -1,9 +1,11 @@
+import { i18n } from "next-i18next";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 const ProductCard = ({ title, image, category }: { title: string, image: StaticImageData, category: string }) => {
 
     return (
-        <div className="w-[300px] h-full md:min-h-[420px] relative z-10 overflow-hidden hover:border-opacity-100 
+        <Link href={`/${i18n?.language}/products/slug`} className="w-[300px] h-full md:min-h-[420px] relative z-10 overflow-hidden hover:border-opacity-100 
         border-b border-opacity-0 border-neutral-900 pb-4 transition-[--tw-border-opacity] duration-500
         [&:hover>.relative>img]:scale-[1.05] [&:hover>.relative>img]:opacity-[0.5]">
             <div className="relative overflow-hidden">
@@ -22,7 +24,7 @@ const ProductCard = ({ title, image, category }: { title: string, image: StaticI
                     {category}
                 </h4>
             </div>
-        </div>
+        </Link>
     )
 };
 
