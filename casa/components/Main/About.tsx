@@ -1,8 +1,7 @@
 import Image from "next/image";
-import { aboutBackground, couch3, logoDark } from "../../public/assets";
+import { aboutBackground, logoDark } from "../../public/assets";
 import { TFunction } from "next-i18next";
 import Link from "next/link";
-import Values from "./Values";
 import FadeInOnScroll from "../animated/FadeInOnScroll";
 
 const About = ({ t }: { t: TFunction }) => {

@@ -15,7 +15,7 @@ import headerBackground from "./head-background - Copy.png"
 import mobileHeaderBackground from "./head-background.png"
 import footerBackground from "./footer-background.jpg"
 import aboutBackground from "./about-background.webp"
-import productsBackground from "./3d-rendering-contemporary-modern-dining-room-living-room-with-luxury-decor.jpg"
+import productsBackground from "./3d-rendering-contemporary-modern-dining-room-living-room-with-luxury-decor.webp"
 
 import logoLight from "./CasaLogo - White.png"
 import logoDark from "./CasaLogo 2 - Black.png"
