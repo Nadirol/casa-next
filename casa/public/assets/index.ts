@@ -1,6 +1,4 @@
-
-import bannerExample from "./banner-example.jpg"
-import productExample from "./product-example.jpg"
+// @ts-nocheck
 
 import magnifyingGlassIcon from "./magnifying-glass.svg"
 import phoneIcon from "./phone.svg"
@@ -17,28 +15,22 @@ import headerBackground from "./head-background - Copy.png"
 import mobileHeaderBackground from "./head-background.png"
 import footerBackground from "./footer-background.jpg"
 import aboutBackground from "./about-background.webp"
-import valuesBackground from "./polygon-scatter-haikei.svg"
 import productsBackground from "./3d-rendering-contemporary-modern-dining-room-living-room-with-luxury-decor.jpg"
 
 import logoLight from "./CasaLogo - White.png"
 import logoDark from "./CasaLogo 2 - Black.png"
 
-import couch1 from "./Couch1.webp"
-import couch2 from "./Couch2.webp"
-import couch3 from "./Couch3.webp"
-import couch4 from "./chic-modern-luxury-aesthetics-style-living-room-gray-tone.jpg"
-
-import banner2 from "./Banner2.png"
 import banner1 from "./5869029.png"
+import banner2 from "./Banner2.png"
 
-import chairImage from "./z4754979139979_bffb0f3f234b8a49497c4ea430e0207f.jpg"
-import blisterImage from "./NPNA1161.jpg"
-import tabImage from "./NPNA0250.jpg"
-import tabImage2 from "./NPNA0227.jpg"
-import tabImage3 from "./NPNA0228.jpg"
-import tabImage4 from "./NPNA0259.jpg"
+import chairImage from "./z4754979139979_bffb0f3f234b8a49497c4ea430e0207f.webp"
+import blisterImage from "./NPNA1161.webp"
+import tabImage from "./NPNA0250.webp"
+import tabImage2 from "./NPNA0227.webp"
+import tabImage3 from "./NPNA0228.webp"
+import tabImage4 from "./NPNA0259.webp"
 
-export { logoLight, phoneIcon, magnifyingGlassIcon, bannerExample, productExample, arrowRightIcon, logoDark, headerBackground,
-couch1, couch2, couch3, banner2, footerBackground, facebookIcon, aboutBackground, couch4, valuesBackground, banner1, menuIcon,
+export { logoLight, phoneIcon, magnifyingGlassIcon, arrowRightIcon, logoDark, headerBackground,
+banner2, footerBackground, facebookIcon, aboutBackground, banner1, menuIcon,
 closeicon, mobileHeaderBackground, zaloLogo, messengerLogo, chairImage, blisterImage, planeIcon, tabImage, locationIcon,
 productsBackground, tabImage2, tabImage3, tabImage4 }

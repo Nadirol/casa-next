@@ -20,7 +20,8 @@ export default function Home() {
     <>
       <NextSeo
         title="CASA - Cuộc Sống Tiện Nghi"
-        canonical="casa-vietnam.vn/vi"
+        canonical="/vi"
+        description="Tại CASA, chúng tôi tự hào về việc biến không gian sống thành các tác phẩm nghệ thuật với các sản phẩm nội thất tinh xảo và thời thượng của chúng tôi. Nằm chặt trong trái tim của Việt Nam, chúng tôi đã dành nhiều năm để hoàn thiện nghệ thuật chế tác các tác phẩm vượt thời gian kết hợp hoàn hảo giữa tính thực dụng và vẻ đẹp."
       />
       <div className={`${roboto.className} flex flex-col overflow-hidden`}>
         <Header

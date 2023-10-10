@@ -11,6 +11,7 @@ export default function Document() {
         <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5"/>
         <meta name="msapplication-TileColor" content="#da532c"/>
         <meta name="theme-color" content="#ffffff"/>
+        <meta name="keywords" content="nội thất sang trọng, bàn ghế tarno, tarno, ván gỗ, vỉ gỗ, tủ đầu giường, tủ đầu giường thông minh, phòng ngủ hiện đại, nội thất hiện đại">
       </Head>
       <body>
         <Main />

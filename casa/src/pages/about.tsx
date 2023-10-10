@@ -18,7 +18,7 @@ export default function AboutPage() {
     <>
       <NextSeo
         title="Về chúng tôi - CASA"
-        canonical="casa-vietnam.vn/vi/about"
+        canonical="/vi/about"
       />
       
       <div className={`${roboto.className} flex flex-col overflow-hidden bg-neutral-900`}>
