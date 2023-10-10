@@ -80,5 +80,29 @@
     "search": "Tìm kiếm",
 
     "contactParagraph": "Hãy tự do liên hệ với chúng tôi với đề xuất dự án, báo giá hoặc ước tính, hoặc chỉ đơn giản là để nói xin chào. Đây là thông tin liên hệ của chúng tôi.",
-    "companyTitle": "CÔNG TY CỔ PHẦN XUÂN HOÀ HOME"
+    "companyTitle": "CÔNG TY CỔ PHẦN XUÂN HOÀ HOME",
+
+    "feature1": "SẠC KHÔNG DÂY",
+    "feature2": "CỔNG SẠC USB/TYPE-C",
+    "feature3": "LOA BLUETOOTH",
+    "feature4": "ĐÈN LED 3 MÀU",
+
+    "specifications": "Thông số kỹ thuật",
+    "model": "Model",
+    "size": "Kích thước",
+    "materials": "Chất liệu",
+    "oak": "Gỗ sồi",
+    "temperedGlass": "Kính cường lực",
+    "speakers": "Loa",
+    "powerSource": "Nguồn điện",
+    "wirelessCharge": "Sạc không dây",
+    "wiredCharge": "Sạc dây",
+    "LEDlight": "Đèn LED",
+    "white": "Trắng",
+    "gold": "Vàng",
+    "neutral": "Trung tính",
+
+    "description": "Chi tiết",
+    "tabDescription1": "Ngăn chứa đồ 2 tầng rộng rãi kết hợp núm kéo đồng tiện lợi và sang trọng",
+    "tabDescription2": "Phong cách cổ điển kết hợp hiện đại, nhỏ gọn, đa chức năng: tủ đầu giường, trang trí phòng khách, bàn cạnh sofa, tủ để tài liệu... phù hợp với mọi không gian"
 }

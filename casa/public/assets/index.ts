@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import magnifyingGlassIcon from "./magnifying-glass.svg"
 import phoneIcon from "./phone.svg"
 import arrowRightIcon from "./arrow-right.svg"
@@ -10,6 +8,10 @@ import zaloLogo from "./zalo-logo.webp"
 import messengerLogo from "./Facebook_Messenger_logo_2020.svg.png"
 import planeIcon from "./plane.svg"
 import locationIcon from "./location.svg"
+import chargingIcon from "./wireless-charging.png"
+import electricityIcon from "./flash.png"
+import bluetoothIcon from "./bluetooth.png"
+import ledLightIcon from "./led-light.png"
 
 import headerBackground from "./head-background - Copy.png"
 import mobileHeaderBackground from "./head-background.png"
@@ -33,4 +35,4 @@ import tabImage4 from "./NPNA0259.webp"
 export { logoLight, phoneIcon, magnifyingGlassIcon, arrowRightIcon, logoDark, headerBackground,
 banner2, footerBackground, facebookIcon, aboutBackground, banner1, menuIcon,
 closeicon, mobileHeaderBackground, zaloLogo, messengerLogo, chairImage, blisterImage, planeIcon, tabImage, locationIcon,
-productsBackground, tabImage2, tabImage3, tabImage4 }
+productsBackground, tabImage2, tabImage3, tabImage4, chargingIcon, electricityIcon, bluetoothIcon, ledLightIcon }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { aboutBackground, logoDark } from "../../public/assets";
-import { TFunction } from "next-i18next";
+import { TFunction, i18n } from "next-i18next";
 import Link from "next/link";
 import FadeInOnScroll from "../animated/FadeInOnScroll";
 
@@ -44,7 +44,7 @@ const About = ({ t }: { t: TFunction }) => {
                     </FadeInOnScroll>
 
                     <FadeInOnScroll>
-                        <Link href="/" 
+                        <Link href={`/${i18n?.language}/about`} 
                         className="text-white font-medium md:text-xl hover:underline">
                             {t('readMore')} &gt;&gt;&gt;
                         </Link>

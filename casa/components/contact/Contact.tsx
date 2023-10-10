@@ -5,11 +5,11 @@ import { locationIcon, planeIcon } from "../../public/assets";
 const Contact = ({ t }: { t: TFunction}) => {
 
     return (
-        <div className="grid md:grid-cols-2">
+        <div className="grid md:grid-cols-contact">
               <iframe 
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7183.454728012203!2d105.89936137403186!3d21.04217083353362!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a99767260733%3A0xae3333b685a10ece!2sJOYA%20TRAVEL!5e0!3m2!1sen!2sus!4v1690964884442!5m2!1sen!2sus" 
               allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"
-              className="border flex-1 border-neutral-500 aspect-square h-full w-full">
+              className="border flex-1 border-neutral-500 aspect-[2/1] w-full">
               </iframe>
               
               <div className="bg-neutral-800 px-12 py-8 relative">
@@ -45,7 +45,7 @@ const Contact = ({ t }: { t: TFunction}) => {
                         <div className="flex gap-8 items-center">
                             <Image src={planeIcon} alt="location icon" className="w-[60px]"/>
                             <div className="flex gap-2 items-start flex-col">
-                                <h3 className="text-2xl font-medium">{t('emailUs')}</h3>
+                                <h3 className="text-2xl font-medium">{t('email')}</h3>
                                 <span className="w-10 h-[2px] bg-neutral-500 rounded-2xl"></span>
                                 <h5>sales@casa-vietnam.vn</h5>
                             </div>

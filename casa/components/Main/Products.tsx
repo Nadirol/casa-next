@@ -1,4 +1,4 @@
-import { TFunction } from "next-i18next";
+import { TFunction, i18n } from "next-i18next";
 import Link from "next/link";
 import ProductCard from "../Card/ProductCard";
 import { blisterImage, chairImage, tabImage } from "../../public/assets";
@@ -33,7 +33,7 @@ const Products = ({ t }: { t: TFunction }) => {
             </div>
 
             <div className="w-container mx-auto relative z-10 flex gap-6 flex-col mt-4">
-                <Link href="/" className="flex gap-3 items-center text-neutral-400 font-light
+                <Link href={`/${i18n?.language}/products`} className="flex gap-3 items-center text-neutral-400 font-light
                 hover:text-neutral-900 [&:hover>svg>path]:fill-neutral-900 mx-auto">
                     {t('viewAllProducts')}
                     <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">

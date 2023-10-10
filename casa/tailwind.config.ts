@@ -39,7 +39,8 @@ module.exports = {
       boxShadow: {  
       },
       gridTemplateColumns: {
-        'details': '6fr 4fr'
+        'details': '6fr 4fr',
+        'contact': '2fr 1fr'
       },
       screens: {
         '-xl': { 'max': '1279px' } ,

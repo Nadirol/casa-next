@@ -83,5 +83,29 @@
     "contactParagraph": "Feel free to contact us with a project proposal, quote or estimation, or simply to say hello. Here’s our contact info.",
     "companyTitle": "XUAN HOA HOME JOINT STOCK COMPANY",
 
-    "aboutUs": "About Us"
+    "aboutUs": "About Us",
+
+    "feature1": "WIRELESS CHARGING",
+    "feature2": "USB/TYPE C CHARGING",
+    "feature3": "BLUETOOTH SPEAKER",
+    "feature4": "3-COLOR LED NIGHT LIGHT",
+
+    "specifications": "Specifications",
+    "model": "Model",
+    "size": "Size",
+    "materials": "Materials",
+    "oak": "Oak",
+    "temperedGlass": "Tempered glass",
+    "speakers": "Speakers",
+    "powerSource": "Power source",
+    "wirelessCharge": "Wireless charge",
+    "wiredCharge": "Wired charge",
+    "LEDlight": "LED Light",
+    "white": "White",
+    "gold": "Gold",
+    "neutral": "Neutral",
+
+    "description": "Description",
+    "tabDescription1": "Spacious two-tier storage compartment combined with convenient and elegant drawer handles.",
+    "tabDescription2": "Classic style combined with modernity, compact size, and multifunctionality: bedside cabinet, living room decoration, sofa side table, document storage cabinet... suitable for any space."
 }
