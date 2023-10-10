@@ -16,7 +16,6 @@ const SearchBar = ({ t }: Props) => {
                 <input type="text" placeholder={`${t('search')}`} className="w-full outline-none bg-transparent text-white"/>
                 <Image src={magnifyingGlassIcon} alt="magnifying glass icon" />
                 <div className="absolute w-full h-[200px] bg-white left-0 bottom-0 translate-y-[110%] border rounded-lg p-4 hidden">
-                    <h1>asdasd</h1>
                 </div>
             </form>
         </div>

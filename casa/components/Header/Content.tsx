@@ -14,9 +14,9 @@ const HeaderContent = ({ t }: { t: TFunction}) => {
                     </h3>
                 </div>
 
-                <h1 className="font-bold text-xl xl:text-2xl 2xl:text-4xl uppercase xl:w-2/3 2xl:w-full">
+                <h2 className="font-bold text-xl xl:text-2xl 2xl:text-4xl uppercase xl:w-2/3 2xl:w-full">
                     {t('headerSlogan')}
-                </h1>
+                </h2>
 
                 <p className="text-xs md:text-sm font-light tracking-normal 2xl:text-base leading-relaxed w-[80%]">
                     {t('headerParagraph1')}

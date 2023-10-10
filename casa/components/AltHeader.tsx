@@ -47,7 +47,6 @@ const AltHeader = ({ t, heading }: { t: TFunction, heading: string }) => {
             text-2xl md:text-4xl font-bold tracking-[0.02rem] text-white text-center">
                 {t(heading).toUpperCase()}
             </h1>
-            {/* <div className="bg-gradient-to-b from-black md:via-transparent to-filter-dark md:to-transparent absolute z-0 inset-0 w-full h-full"></div> */}
 
             <div className="w-container flex justify-between items-center mx-auto py-2 xl:py-4 relative z-10">
                 <Link href={`/${i18n?.language}`}>
