@@ -47,7 +47,7 @@ const Contact = ({ t }: { t: TFunction}) => {
                             <div className="flex gap-2 items-start flex-col">
                                 <h3 className="text-2xl font-medium">{t('email')}</h3>
                                 <span className="w-10 h-[2px] bg-neutral-500 rounded-2xl"></span>
-                                <h5>sales@casa-vietnam.vn</h5>
+                                <h5>info@casa-vietnam.vn</h5>
                             </div>
                         </div>
                     </div>

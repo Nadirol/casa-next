@@ -7,15 +7,18 @@ import FadeInOnScroll from "../animated/FadeInOnScroll";
 const productData = [
     {
         keyword: 'tarno',
-        image: chairImage
+        image: chairImage,
+        slug: 'ban-ghe-tarno'
     },
     {
         keyword: 'woodenBlister',
-        image: blisterImage
+        image: blisterImage,
+        slug: 'van-vi-go-12-nan'
     },
     {
         keyword: 'tab',
-        image: tabImage
+        image: tabImage,
+        slug: 'tu-dau-giuong-thong-minh'
     }
 ]
 
@@ -45,7 +48,12 @@ const Products = ({ t }: { t: TFunction }) => {
                 <div className="flex gap-4 md:gap-12 -md:flex-col justify-center items-center md:items-start">
                     {productData.map((p, index) => (
                         <FadeInOnScroll key={index}>
-                            <ProductCard title={t(`${p.keyword}`)} image={p.image} category={t(`${p.keyword}Category`)}/>
+                            <ProductCard 
+                                title={t(`${p.keyword}`)} 
+                                image={p.image} 
+                                category={t(`${p.keyword}Category`)}
+                                slug={p.slug}
+                            />
                         </FadeInOnScroll>
                     ))}
                 </div>

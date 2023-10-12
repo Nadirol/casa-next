@@ -104,6 +104,8 @@
     "white": "White",
     "gold": "Gold",
     "neutral": "Neutral",
+    "color": "Color",
+    "type": "Type",
 
     "description": "Description",
     "tabDescription1": "Spacious two-tier storage compartment combined with convenient and elegant drawer handles.",

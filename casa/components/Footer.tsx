@@ -57,7 +57,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                             {t('phoneNumber') + ": "} <a href="https://zalo.me/0373522843" target="_blank" className="font-normal">0373 522 843</a>
                         </h3>
                         <h3>
-                            {t('email') + ": "} <span className="font-normal">sales@xhhome.vn</span>
+                            {t('email') + ": "} <span className="font-normal">info@casa-vietnam.vn</span>
                         </h3>
                         <h3>
                             {t('followUs') + ": "} 

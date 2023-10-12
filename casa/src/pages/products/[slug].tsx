@@ -72,7 +72,7 @@ export default function AboutPage() {
             <div className="w-container mx-auto grid gap-5 xl:gap-8 md:grid-cols-2 xl:grid-cols-details">
                 <div className="flex gap-4 md:gap-8 xl:gap-12 flex-col">
                     <div className="flex justify-center items-center w-full">
-                        <Image src={images[activeImage]} alt="product image" width={400} height={400} 
+                        <Image src={product.image_url[activeImage]} alt="product image" width={400} height={400} 
                         className="object-cover aspect-square rounded-lg"/>
                     </div>
 
