@@ -6,7 +6,7 @@ import ProductsSlide from "./ProductsSlide";
 const productData = [
     {
         keyword: 'tarno',
-        image: chairImage
+        image: chairImage,
     },
     {
         keyword: 'woodenBlister',
