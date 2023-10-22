@@ -10,8 +10,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@sanity/image-url": "^1.0.2",
-    "@sanity/vision": "^3.18.0",
     "@supabase/supabase-js": "^2.38.0",
     "@tailwindcss/line-clamp": "^0.4.4",
     "intersection-observer": "^0.12.2",
@@ -25,7 +23,6 @@
     "react-dom": "latest",
     "sanity": "^3.18.0",
     "sharp": "^0.32.6",
-    "styled-components": "5.2",
     "tailwind-scrollbar-hide": "^1.1.7",
     "tailwindcss-animated": "^1.0.1"
   },
