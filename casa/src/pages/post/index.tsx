@@ -10,7 +10,6 @@ import AltHeader from "../../../components/AltHeader";
 import Widgets from "../../../components/Widgets";
 import { client } from "../../../lib/sanity";
 import { IPost } from "../../../interface/interface";
-import Link from "next/link";
 
 const roboto = Roboto({ subsets: ['latin','vietnamese'], weight: ["300","400","500","700"] });
 
