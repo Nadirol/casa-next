@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://casa-vietnam.vn
+
+# Sitemaps
+Sitemap: https://casa-vietnam.vn/sitemap.xml
