@@ -30,5 +30,7 @@ export interface IPost {
     slug: {
         current: string
     },
-    _createdAt: string
+    _createdAt: string,
+    image: any,
+    published: boolean
 }

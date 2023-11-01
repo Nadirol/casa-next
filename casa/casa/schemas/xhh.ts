@@ -1,7 +1,7 @@
 export default {
-    name: 'postCasa',
+    name: 'postXHH',
     type: 'document',
-    title: 'Đăng Bài CASA',
+    title: 'Đăng Bài XHH',
     fields: [
         {
             name: 'title',
