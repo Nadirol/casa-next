@@ -10,10 +10,21 @@ import About from '../../components/Main/About';
 import Widgets from '../../components/Widgets';
 import Values from '../../components/Main/Values';
 import { NextSeo } from 'next-seo';
+import { IPost } from '../../interface/interface';
+import { client } from '../../lib/sanity';
+import News from '../../components/Main/News';
 
 const roboto = Roboto({ subsets: ['latin','vietnamese'], weight: ['300','400','500','700'] });
 
-export default function Home() {
+async function getData() {
+  const query = `*[_type == "postCasa"]`;
+
+  const data = await client.fetch(query);
+
+  return data;
+}
+
+export default function Home({ data }: { data: IPost[]}) {
   const { t } = useTranslation('common');
 
   return (
@@ -33,6 +44,10 @@ export default function Home() {
 
           <Values t={t}/>
 
+          {data.filter(p => p.published).length > 0 && (
+            <News t={t} data={data}/>
+          )}
+
           <Widgets t={t}/>
 
           <Banner/>
@@ -43,13 +58,15 @@ export default function Home() {
   )
 };
 
-export async function getStaticProps({ locale }: { locale: string}) {
+export async function getServerSideProps({ locale }: { locale: string }) {
+  const data = await getData() as IPost[];
+
   return {
     props: {
+      data: data,
       ...(await serverSideTranslations(locale, [
-        'common',
-      ])),
-      // Will be passed to the page component as props
-    },    
-  }
+          'common',
+      ]))
+    }, // will be passed to the page component as props
+  };
 }

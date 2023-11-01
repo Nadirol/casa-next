@@ -24,7 +24,7 @@ const useClickDetector = (refs: React.MutableRefObject<HTMLDivElement | null>[],
     },[refs[0]])
 };
 
-const AltHeader = ({ t, heading }: { t: TFunction, heading: string }) => {
+const AltHeader = ({ t, heading }: { t: TFunction, heading: string | null }) => {
 
     const [sidenavOpened, setSidenavOpened] = useState(false);
     const sideNavRef = useRef(null);
@@ -43,10 +43,12 @@ const AltHeader = ({ t, heading }: { t: TFunction, heading: string }) => {
 
             <div className="bg-filter-medium-dark absolute z-[1] inset-0 w-full h-full"></div>
 
-            <h1 className="absolute z-20 right-1/2 bottom-[15%] translate-x-1/2 
-            text-2xl md:text-4xl font-bold tracking-[0.02rem] text-white text-center">
-                {t(heading).toUpperCase()}
-            </h1>
+            {heading && (
+                <h1 className="absolute z-20 right-1/2 bottom-[15%] translate-x-1/2 
+                text-2xl md:text-4xl font-bold tracking-[0.02rem] text-white text-center">
+                    {t(heading).toUpperCase()}
+                </h1>
+            )}
 
             <div className="w-container flex justify-between items-center mx-auto py-2 xl:py-4 relative z-10">
                 <Link href={`/${i18n?.language}`}>
