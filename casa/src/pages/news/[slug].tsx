@@ -81,7 +81,7 @@ export default function PostPage({ data }: { data: IPost }) {
                 </h4>              
               </div>
               
-                <h1 className="text-neutral-900 font-semibold text-2xl md:text-[3rem] text-center">
+                <h1 className="text-neutral-900 font-semibold text-2xl md:text-[3rem] leading-tight text-center">
                   {data.title}
                 </h1>
 
