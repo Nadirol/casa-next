@@ -26,7 +26,7 @@ const News = ({ t, data }: { t: TFunction, data: IPost[] }) => {
                     >
                       <IdealImage image={post.image}/>
                       <div>
-                        <h3 className="text-2xl font-bold leading-8 tracking-tight text-gray-900">
+                        <h3 className="text-2xl font-bold leading-8 tracking-tight text-gray-100">
                           {post.title}
                         </h3>
                       </div>
@@ -35,7 +35,7 @@ const News = ({ t, data }: { t: TFunction, data: IPost[] }) => {
                         {new Date(post._createdAt).toISOString().split("T")[0]}
                       </p>
 
-                      <p className="prose max-w-none text-gray-500 line-clamp-2">
+                      <p className="prose max-w-none text-gray-400 line-clamp-3">
                         {post.overview}
                       </p>
                     </Link>

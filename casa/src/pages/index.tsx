@@ -17,7 +17,7 @@ import News from '../../components/Main/News';
 const roboto = Roboto({ subsets: ['latin','vietnamese'], weight: ['300','400','500','700'] });
 
 async function getData() {
-  const query = `*[_type == "post"]`;
+  const query = `*[_type == "postCasa"]`;
 
   const data = await client.fetch(query);
 
@@ -44,7 +44,7 @@ export default function Home({ data }: { data: IPost[]}) {
 
           <Values t={t}/>
 
-          {data.filter(p => p.title.length > 0 && p.content).length > 0 && (
+          {data.filter(p => p.published).length > 0 && (
             <News t={t} data={data}/>
           )}
 
