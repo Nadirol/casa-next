@@ -17,7 +17,7 @@ export const IdealImage = ({ image }: { image: any }): ReactElement => {
           placeholder="blur"
           blurDataURL={urlFor(image).width(24).height(24).blur(10).url()}
 
-          className='min-h-[240px] object-contain mx-auto'
+          className='min-h-[240px] md:h-[200px] object-cover mx-auto'
         />
       )}
     </div>
