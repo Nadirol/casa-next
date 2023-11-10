@@ -27,7 +27,7 @@ import banner2 from "./Banner2.png"
 
 import chairImage from "./z4754979139979_bffb0f3f234b8a49497c4ea430e0207f.webp"
 import blisterImage from "./NPNA1161.webp"
-import tabImage from "./NPNA0250.webp"
+import tabImage from "./NPNA0672.jpg"
 import tabImage2 from "./NPNA0227.webp"
 import tabImage3 from "./NPNA0228.webp"
 import tabImage4 from "./NPNA0259.webp"

@@ -52,7 +52,7 @@ export default function AboutPage() {
   }, [slug]);
 
   if (!product) {
-    return <div>Product not found</div>;
+    return <div></div>;
   }
 
   return (
