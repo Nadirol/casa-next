@@ -17,7 +17,8 @@ module.exports = {
         'banner': 'min(1120px, 100% - 6rem)',
         'search-bar': 'min(500px, 75%)',
         'sidenav': 'min(24rem, 100% - 4rem)',
-        'form': 'min(600px, 100% - 4rem)'
+        'form': 'min(600px, 100% - 4rem)',
+        'post': 'min(400px, 100% - 1rem)'
       },
 
       colors: {

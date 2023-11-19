@@ -58,7 +58,7 @@ const News = ({ t, data }: { t: TFunction, data: IPost[] }) => {
     return (
         <div className="bg-black text-white relative [&:hover>button]:opacity-100">
           <div className="w-container mx-auto">
-            <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+            <div className="pt-6 pb-8 ">
               <h1 className="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
                 {t('news')}
               </h1>
@@ -67,7 +67,7 @@ const News = ({ t, data }: { t: TFunction, data: IPost[] }) => {
             <div className="flex gap-16 items-start overflow-x-scroll snap-x scrollbar-hide
             snap-mandatory overscroll-x-contain overflow-y-visible pr-[3rem] pt-4" ref={sliderRef}> 
               {data.filter(p => p.published).map((post) => (
-                <div key={post._id} className="w-post w-[300px] snap-start">
+                <div key={post._id} className="w-post min-w-[300px] snap-start">
                   <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0">
                     <Link
                       href={`/news/${post.slug?.current}` || `/`}
@@ -93,15 +93,22 @@ const News = ({ t, data }: { t: TFunction, data: IPost[] }) => {
               ))}
             </div>
 
-            <button className={`p-3 absolute bg-primary-dark rounded-[100%] left-0 md:opacity-20 transition-opacity duration-500
-            bottom-1/2 translate-x-[-30%] xl:translate-x-[-110%] translate-y-1/2 z-10 ${scrollPosition === 0 && "hidden"}`} 
+            <button className={`p-3 absolute left-0 transition-opacity duration-500
+            bottom-1/2 translate-x-[-30%] xl:translate-x-[100%] translate-y-1/2 z-50 ${scrollPosition === 0 && "hidden"}`} 
             onClick={prevSlide}>
-                <Image src={arrowRightIcon} alt="arrow icon" className="rotate-180 w-2 md:w-4"/>
+              <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="rotate-180">
+              <path d="M10 12L8.6 10.55L12.15 7H0V5H12.15L8.6 1.45L10 0L16 6L10 12Z"
+              className="fill-white"/>
+              </svg>          
             </button>
-            <button className={`p-3 absolute bg-primary-dark rounded-[100%] right-0 md:opacity-20 transition-opacity 
-            duration-500 bottom-1/2 translate-x-[30%] xl:translate-x-[110%] translate-y-1/2 z-10 ${isScrollEnd && "hidden"}`} 
+
+            <button className={`p-3 absolute right-0 transition-opacity z-30
+            duration-500 bottom-1/2 translate-x-[30%] xl:translate-x-[-100%] translate-y-1/2 ${isScrollEnd && "hidden"}`} 
             onClick={nextSlide}>
-                <Image src={arrowRightIcon} alt="arrow icon" className="w-2 md:w-4"/>
+              <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="">
+              <path d="M10 12L8.6 10.55L12.15 7H0V5H12.15L8.6 1.45L10 0L16 6L10 12Z"
+              className="fill-white"/>
+              </svg>           
             </button>
           </div>
 

@@ -42,24 +42,11 @@ export default function PostPage({ data }: { data: IPost }) {
     },
   };
   
-  if (!data) {
-    return (
-      <>
-        <NextSeo
-          title={`CASA`}
-          nofollow
-          noindex
-        />
-      </>
-    )
-  }
-  
   return (
     <>
       <NextSeo
         title={`${data.title} | CASA`}
         description={data.overview}
-        canonical={`https://www.casa-vietnam.vn/vi/news/${data.slug}`}    
       />
 
       <div className={`${roboto.className} flex flex-col overflow-hidden bg-neutral-900`}>
