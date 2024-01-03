@@ -5,9 +5,9 @@ import Link from "next/link";
 const ProductCard = ({ title, image, category, slug }: { title: string, image: StaticImageData, category: string, slug: string }) => {
 
     return (
-        <Link href={`/${i18n?.language}/products/${slug}`} className="w-[300px] h-full md:min-h-[420px] relative z-10 overflow-hidden hover:border-opacity-100 
+        <Link href={`/${i18n?.language}/products/${slug}`} className="min-w-[270px] md:min-w-[320px] h-full md:min-h-[420px] relative z-10 overflow-hidden hover:border-opacity-100 
         border-b border-opacity-0 border-neutral-900 pb-4 transition-[--tw-border-opacity] duration-500
-        [&:hover>.relative>img]:scale-[1.05] [&:hover>.relative>img]:opacity-[0.5]">
+        [&:hover>.relative>img]:scale-[1.05] [&:hover>.relative>img]:opacity-[0.5] snap-start">
             <div className="relative overflow-hidden">
                 <Image src={image} alt="product preview" 
                 className="transition-all duration-300 object-cover w-full aspect-square max-w-[420px]"/>

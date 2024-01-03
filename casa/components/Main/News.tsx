@@ -3,8 +3,6 @@ import Link from "next/link";
 import { IdealImage } from "../SanityImage";
 import { IPost } from "../../interface/interface";
 import { useEffect, useRef, useState } from "react";
-import { arrowRightIcon } from "../../public/assets";
-import Image from "next/image";
 
 const News = ({ t, data }: { t: TFunction, data: IPost[] }) => {
   const sliderRef = useRef<HTMLDivElement | null>(null);

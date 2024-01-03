@@ -31,8 +31,9 @@ import tabImage from "./NPNA0672.jpg"
 import tabImage2 from "./NPNA0227.webp"
 import tabImage3 from "./NPNA0228.webp"
 import tabImage4 from "./NPNA0259.webp"
+import newTabImage from "./SIDETAB-V2-3.jpg"
 
 export { logoLight, phoneIcon, magnifyingGlassIcon, arrowRightIcon, logoDark, headerBackground,
-banner2, footerBackground, facebookIcon, aboutBackground, banner1, menuIcon,
+banner2, footerBackground, facebookIcon, aboutBackground, banner1, menuIcon, newTabImage,
 closeicon, mobileHeaderBackground, zaloLogo, messengerLogo, chairImage, blisterImage, planeIcon, tabImage, locationIcon,
 productsBackground, tabImage2, tabImage3, tabImage4, chargingIcon, electricityIcon, bluetoothIcon, ledLightIcon }

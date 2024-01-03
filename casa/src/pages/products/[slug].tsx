@@ -9,14 +9,11 @@ import AltHeader from "../../../components/AltHeader";
 import Footer from "../../../components/Footer";
 import Widgets from "../../../components/Widgets";
 import Image from "next/image";
-import { bluetoothIcon, chargingIcon, electricityIcon, ledLightIcon, tabImage, tabImage2, tabImage3, tabImage4 } from "../../../public/assets";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { IProduct } from "../../../interface/interface";
 
 const roboto = Roboto({ subsets: ['latin','vietnamese'], weight: ["300","400","500","700"] });
-
-const images = [tabImage, tabImage2, tabImage3, tabImage4]
 
 export default function AboutPage() {
   const { t } = useTranslation('common');
@@ -29,13 +26,10 @@ export default function AboutPage() {
 
   const router = useRouter();
   const { slug } = router.query;
-
-  const [isLoading, setIsLoading] = useState(true);
   
   const [product, setProduct] = useState<IProduct>();
 
   useEffect(() => {
-    setIsLoading(true)
     // Make the API request with the slug as part of the URL path
     const fetchData = async () => {
       const response = await fetch(`/api/product/${slug}`);
@@ -43,7 +37,6 @@ export default function AboutPage() {
 
       console.log(data)
       setProduct(data);
-      setIsLoading(false)
     };
 
     if (slug) {
@@ -165,8 +158,6 @@ export default function AboutPage() {
 }
 
 export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
-
-
     const paths: any = [];
 
     return {

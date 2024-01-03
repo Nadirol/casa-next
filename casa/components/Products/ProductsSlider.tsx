@@ -1,9 +1,13 @@
 import { TFunction } from "next-i18next"
-import { blisterImage, chairImage, tabImage } from "../../public/assets";
+import { blisterImage, chairImage, newTabImage, tabImage } from "../../public/assets";
 import { useState } from "react";
 import ProductsSlide from "./ProductsSlide";
 
 const productData = [
+    {
+        keyword: 'newTab',
+        image: newTabImage
+    },
     {
         keyword: 'tarno',
         image: chairImage,
