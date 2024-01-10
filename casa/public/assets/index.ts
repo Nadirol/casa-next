@@ -25,13 +25,13 @@ import logoDark from "./CasaLogo 2 - Black.png"
 import banner1 from "./5869029.png"
 import banner2 from "./Banner2.png"
 
-import chairImage from "./z4754979139979_bffb0f3f234b8a49497c4ea430e0207f.webp"
-import blisterImage from "./NPNA1161.webp"
-import tabImage from "./NPNA0672.jpg"
+import chairImage from "./9f17d2c5ae01055f5c10.jpg"
+import blisterImage from "./23f7e52799e332bd6bf2.jpg"
+import tabImage from "./61c2b6324cf7e7a9bee6.jpg"
 import tabImage2 from "./NPNA0227.webp"
 import tabImage3 from "./NPNA0228.webp"
 import tabImage4 from "./NPNA0259.webp"
-import newTabImage from "./SIDETAB-V2-3.jpg"
+import newTabImage from "./34acce5c34999fc7c688.jpg"
 
 export { logoLight, phoneIcon, magnifyingGlassIcon, arrowRightIcon, logoDark, headerBackground,
 banner2, footerBackground, facebookIcon, aboutBackground, banner1, menuIcon, newTabImage,

@@ -11,8 +11,8 @@ const ProductCard = ({ title, image, category, slug }: { title: string, image: S
             <div className="relative overflow-hidden">
                 <Image src={image} alt="product preview" 
                 className="transition-all duration-300 object-cover w-full aspect-square max-w-[420px]"/>
-                <div className="absolute z-[1] left-0 bottom-0 bg-gradient-to-t from-filter-dark to-transparent w-full h-[100px]"></div>
-                <div className="absolute z-[1] left-0 top-0 bg-gradient-to-b from-filter-dark to-transparent w-full h-[100px]"></div>            
+                {/* <div className="absolute z-[1] left-0 bottom-0 bg-gradient-to-t from-filter-dark to-transparent w-full h-[100px]"></div>
+                <div className="absolute z-[1] left-0 top-0 bg-gradient-to-b from-filter-dark to-transparent w-full h-[100px]"></div>             */}
             </div>
 
             <div className="text-neutral-900 flex gap-2 flex-col px-2 py-2 text-center">

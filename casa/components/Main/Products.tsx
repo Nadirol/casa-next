@@ -78,12 +78,12 @@ const Products = ({ t }: { t: TFunction }) => {
     }, []);
     
     return (
-        <div className="relative py-16 pb-8 flex gap-6 flex-col bg-neutral-100">
+        <div className="relative py-16 pb-8 flex gap-6 flex-col bg-white">
             <span className="absolute z-[5] h-[1px] bg-black w-full"></span>
 
             <div className="relative z-10 w-container mx-auto">
                 <h2 className="font-light text-neutral-900 text-xl md:text-3xl tracking-[0.2rem] -md:text-center
-                absolute right-1/2 bottom-1/2 translate-y-1/2 translate-x-1/2 bg-neutral-100 px-16">
+                absolute right-1/2 bottom-1/2 translate-y-1/2 translate-x-1/2 bg-white px-16">
                     {t('productsHeading').toUpperCase()}
                 </h2>
             </div>

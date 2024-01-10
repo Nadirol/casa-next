@@ -41,7 +41,7 @@ const ProductsHeader = ({ t }: { t: TFunction }) => {
     return (
         <header className="relative z-20 w-full py-4 md:py-12 xl:py-[60px] h-screen overflow-hidden flex gap-12 flex-col border-b border-neutral-500 bg-neutral-900">
             <Image src={productsBackground} alt="background image" 
-            className="absolute z-0 inset-0 w-full h-full object-cover pointer-events-none saturate-[5%]"/>
+            className="absolute z-0 inset-0 w-full h-full object-cover pointer-events-none saturate-[25%]"/>
 
             <div className="bg-filter-dark absolute z-[0] inset-0 w-full h-full"></div>
 
