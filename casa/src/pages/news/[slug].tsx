@@ -17,7 +17,7 @@ import { Roboto } from "next/font/google";
 const roboto = Roboto({ subsets: ['latin','vietnamese'], weight: ["300","400","500","700"] });
 
 async function getData(slug: string) {
-    const query = `*[_type == "postCasa" && slug.current == "${slug}"][0]`;
+    const query = `*[_type == "postXHH" && slug.current == "${slug}"][0]`;
 
     const data = await client.fetch(query);
 

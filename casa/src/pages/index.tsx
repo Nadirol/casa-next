@@ -17,7 +17,7 @@ import News from '../../components/Main/News';
 const roboto = Roboto({ subsets: ['latin','vietnamese'], weight: ['300','400','500','700'] });
 
 async function getData() {
-  const query = `*[_type == "postCasa"]`;
+  const query = `*[_type == "postXHH"]`;
 
   const data = await client.fetch(query);
 
